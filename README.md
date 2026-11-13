@@ -29,8 +29,8 @@ analysis for data-cleaning and preprocessing purposes.
 
 ### 1. Data Loading and Basic Exploration
 
-  Function / Method      Description
-  ---------------------- ------------------------------------------------------
+  Function / Method      Description \
+  ---------------------- ------------------------------------------------------\
   `pd.read_csv()`        Reads a CSV file into a Pandas DataFrame.\
   `df.info()`            Displays column names, data types, and memory usage.\
   `df.dtypes`            Returns the data types of all columns.\
@@ -41,20 +41,20 @@ analysis for data-cleaning and preprocessing purposes.
 
 ### 2. Sorting and Grouping
 
-  Function / Method    Description
-  -------------------- ---------------------------------------------
-  `df.sort_values()`   Sorts the DataFrame by one or more columns.
-  `df.groupby()`       Groups data based on one or more columns.
-  `groupby.sum()`      Returns the sum for each group.
-  `groupby.mean()`     Returns the mean for each group.
-  `groupby.median()`   Returns the median for each group.
-  `groupby.max()`      Returns the maximum value in each group.
-  `groupby.min()`      Returns the minimum value in each group.
+  Function / Method    Description \
+  -------------------- ---------------------------------------------  
+  `df.sort_values()`   Sorts the DataFrame by one or more columns.  
+  `df.groupby()`       Groups data based on one or more columns.  
+  `groupby.sum()`      Returns the sum for each group.  
+  `groupby.mean()`     Returns the mean for each group.  
+  `groupby.median()`   Returns the median for each group.  
+  `groupby.max()`      Returns the maximum value in each group.  
+  `groupby.min()`      Returns the minimum value in each group.  
 
 ### 3. Data Summary and Manipulation
 
-  Function / Method   Description
-  ------------------- ----------------------------------------------
+  Function / Method   Description  
+  ------------------- ----------------------------------------------  
   `df.mean()`         Calculates the mean for all numeric columns.
   `df.rename()`       Renames columns in the DataFrame.
 
