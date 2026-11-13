@@ -29,7 +29,7 @@ analysis for data-cleaning and preprocessing purposes.
 
 ### 1. Data Loading and Basic Exploration
 
-  Function / Method      Description \
+  Function / Method      Description  
   ---------------------- ------------------------------------------------------\
   `pd.read_csv()`        Reads a CSV file into a Pandas DataFrame.\
   `df.info()`            Displays column names, data types, and memory usage.\
@@ -41,7 +41,7 @@ analysis for data-cleaning and preprocessing purposes.
 
 ### 2. Sorting and Grouping
 
-  Function / Method    Description \
+  Function / Method    Description  
   -------------------- ---------------------------------------------  
   `df.sort_values()`   Sorts the DataFrame by one or more columns.  
   `df.groupby()`       Groups data based on one or more columns.  
@@ -51,24 +51,24 @@ analysis for data-cleaning and preprocessing purposes.
   `groupby.max()`      Returns the maximum value in each group.  
   `groupby.min()`      Returns the minimum value in each group.  
 
-### 3. Data Summary and Manipulation
+### 3. Data Summary and Manipulation  
 
   Function / Method   Description  
   ------------------- ----------------------------------------------  
-  `df.mean()`         Calculates the mean for all numeric columns.
-  `df.rename()`       Renames columns in the DataFrame.
+  `df.mean()`         Calculates the mean for all numeric columns.  
+  `df.rename()`       Renames columns in the DataFrame.  
 
-### 4. Optional Additions
+### 4. Optional Additions  
 
-  Function / Method         Description
-  ------------------------- ----------------------------------------------
-  `df.isnull().sum()`       Checks for missing values in each column.
-  `df.duplicated().sum()`   Counts duplicate rows.
-  `df.dropna()`             Removes rows containing missing values.
-  `df.fillna()`             Fills missing values with a specified value.
-  `df.drop_duplicates()`    Removes duplicate rows.
-  `df.shape`                Returns the number of rows and columns.
-  `df.columns`              Lists column names in the DataFrame.
+  Function / Method         Description  
+  ------------------------- ----------------------------------------------  
+  `df.isnull().sum()`       Checks for missing values in each column.  
+  `df.duplicated().sum()`   Counts duplicate rows.  
+  `df.dropna()`             Removes rows containing missing values.  
+  `df.fillna()`             Fills missing values with a specified value.  
+  `df.drop_duplicates()`    Removes duplicate rows.  
+  `df.shape`                Returns the number of rows and columns.  
+  `df.columns`              Lists column names in the DataFrame.  
 
 ## Program & Output
 << Enter your code and the corresponding screenshot of the output in this section>>
