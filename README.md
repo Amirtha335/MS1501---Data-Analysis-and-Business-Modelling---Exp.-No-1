@@ -71,12 +71,11 @@ analysis for data-cleaning and preprocessing purposes.
   `df.shape`                Returns the number of rows and columns.
   `df.columns`              Lists column names in the DataFrame.
 
-## Notes
+## Program & Output
+<< Enter your code and the corresponding screenshot of the output in this section>>
 
--   Replace `'column'` with the actual column name in the dataset.
--   The `groupby()` methods are applied to the grouped object returned
-    by `df.groupby(...)`.
--   Review missing values and duplicate records before deciding whether
-    to remove or replace them.
--   Save the cleaned dataset after completing the required preprocessing
-    steps.
+
+
+## Result
+
+<< Enter the program execution result>>
