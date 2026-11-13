@@ -2,8 +2,7 @@
 
 ## Aim
 
-To perform data cleaning and preprocessing on a business dataset using
-Python libraries for better data quality and analysis readiness.
+To perform data cleaning and preprocessing on a business dataset using Python libraries for better data quality and analysis readiness.
 
 ## Dataset
 
@@ -14,7 +13,7 @@ The dataset is opened and analyzed using Jupyter Notebook to study its
 data structure, identify data types, and perform basic statistical
 analysis for data-cleaning and preprocessing purposes.
 
-## Algorithm / Steps Followed
+## Algorithm
 
 1.  Import essential Python libraries.
 2.  Load the dataset using Pandas.
