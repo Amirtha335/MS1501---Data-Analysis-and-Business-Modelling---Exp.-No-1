@@ -71,7 +71,73 @@ analysis for data-cleaning and preprocessing purposes.
   `df.columns`              Lists column names in the DataFrame.  
 
 ## Program & Output
-<< Enter your code and the corresponding screenshot of the output in this section>>
+import pandas as pd  
+import numpy as np  
+
+print("Libraries imported successfully")  
+
+df = pd.read_csv("heartdisease.csv")  
+df.head()  
+
+df.info()  
+print("\nData types:")  
+print(df.dtypes)  
+print("\nShape (rows, columns):", df.shape)  
+
+print("Missing values in each column:")  
+print(df.isnull().sum())  
+
+print("\nNumber of duplicate rows:")  
+print(df.duplicated().sum())  
+
+df.describe()  
+
+print("First five records:")  
+display(df.head())  
+
+print("Last five records:")  
+display(df.tail())  
+
+# Sort by the first column as an example  
+first_column = df.columns[0]  
+df_sorted = df.sort_values(by=first_column)  
+df_sorted.head()  
+
+# Group by a categorical column (example: sex, if available)  
+if "sex" in df.columns:  
+    print("Mean values grouped by sex:")  
+    display(df.groupby("sex").mean(numeric_only=True))  
+else:  
+    # Use the first column as a grouping example  
+    group_column = df.columns[0]  
+    print(f"Grouped summary using: {group_column}")  
+    display(df.groupby(group_column).mean(numeric_only=True))  
+
+    # Example: rename columns if required
+# df = df.rename(columns={"old_column_name": "new_column_name"})  
+print("Current column names:")  
+print(df.columns.tolist())  
+
+# Remove duplicate rows  
+df_cleaned = df.drop_duplicates().copy()  
+
+# Fill missing numerical values with their column median  
+numeric_columns = df_cleaned.select_dtypes(include=np.number).columns  
+for column in numeric_columns:  
+    df_cleaned[column] = df_cleaned[column].fillna(df_cleaned[column].median())  
+
+# Fill missing categorical values with the mode, if available  
+categorical_columns = df_cleaned.select_dtypes(exclude=np.number).columns  
+for column in categorical_columns:  
+    if df_cleaned[column].isnull().any() and not df_cleaned[column].mode().empty:  
+        df_cleaned[column] = df_cleaned[column].fillna(df_cleaned[column].mode()[0])  
+
+print("Missing values after cleaning:")  
+print(df_cleaned.isnull().sum())  
+print("\nDuplicates after cleaning:", df_cleaned.duplicated().sum())  
+
+df_cleaned.to_csv("heartdisease_cleaned.csv", index=False)  
+print("Cleaned dataset saved as heartdisease_cleaned.csv")  
 
 
 
